@@ -2,14 +2,15 @@
   <head>
     <title>Tic-Tac-Toe!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/scripts/TTT.js"></script>
-    <link rel="stylesheet" href="/stylesheets/TTT.css">
+    <script src="/Users/GreatCommander/src/Project_1/TTT/scripts/TTT.js"></script>
+    <link rel="stylesheet" href="/Users/GreatCommander/src/Project_1/TTT//stylesheets/TTT.css">
   </head>
   <body>
-    <h1> It's time to Tic the Tac to the Toe? </h2>
-      <p> X goes first, click on a space to begin a Two-Player Game </p>
+    <h1> Ready to Tic the Tac to the Toe? </h2>
+      <p> Click on an empty space to begin a Two-Player Game!
+          <br> X goes first (duh..) </p>
 
-    <div id="outerBoard">
+    <div id="outerBoard" class="boardCenter">
       <table id="board">
         <tr class="rowA">
           <td id="a1"></td>
@@ -26,9 +27,10 @@
           <td id="c2"></td>
           <td id="c3"></td>
         </tr>
-        
-
-
-
+      </table>
+    </div>
+    <div class="buttonPosition">
+        <button id="gameRestart">New Game</button>
+    </div>
   </body>
 </html>
