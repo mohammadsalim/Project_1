@@ -28,6 +28,9 @@ var winnerIs;
 var newGame;
 var boardRestart;
 
+//Initializes Game//
+$(document).ready(function() {
+
 //Player Name Values//
 
 var setName= function(){
@@ -71,11 +74,6 @@ var newGame = function() {
     }
   });
 };
-
-$(document).ready(function() {
-  newGame();
-  setName();
-}); //Used to start the newGame function//
 
 //Function for identifying cell value//
 checkValue = function () {
@@ -132,11 +130,41 @@ checkWin = function() { //X
   ((b3 == "x") || (b3 == "o")) &&
   ((c3 == "x") || (c3 == "o"))
   ) {
-      alert("It's a draw!")
+      alert("It's a draw, start a New Game!")
     }
    }
   }
 };
 
 //Declares who the winner is//
-var winnerIs 
+var winnerIs = function() {
+  if (xWin == true) {
+    alert("Player 1 Wins! You may start a New Game!");
+  } else {
+    if (oWin == true) {
+      alert("Player 2 Wins! You may start a New Game!");
+    }
+  }
+};
+
+//Starts New Game//
+var boardRestart = $('#gameRestart').click(function(event) {
+    a1 = $('#a1').text("");
+    b1 = $('#b1').text("");
+    c1 = $('#c1').text("");
+    a2 = $('#a2').text("");
+    b2 = $('#b2').text("");
+    c2 = $('#c2').text("");
+    a3 = $('#a3').text("");
+    b3 = $('#b3').text("");
+    c3 = $('#c3').text("");
+    xWin = false;
+    oWin = false;
+    newGame();
+});
+
+newGame();
+setName();
+boardRestart();
+
+});

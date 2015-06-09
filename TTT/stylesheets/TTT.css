@@ -1,5 +1,5 @@
 html {
-  background: radial-gradient(circle, #4c4c4c 20%, #191919);
+  background: radial-gradient(circle, #191919 20%, #4c4c4c);
 }
 h1 {
   text-align: center;
@@ -24,6 +24,7 @@ p {
   font-size: 18px;
   display: inline-block;
   padding: 0 30px;
+  position: relative;
 }
 
 .buttonPosition {
@@ -79,4 +80,17 @@ td {
   width: 100%;
   height: 100%;
   background-color: transparent;
+}
+.line {
+  background-color: white;
+  margin: 10% auto 0px auto;
+  width: 100%;
+  height: 4px;
+}
+.info {
+  text-align: left;
+  margin:20px auto 20px auto;
+  width: 100%;
+  height:30px;
+  color: white
 }
