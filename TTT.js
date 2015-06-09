@@ -165,6 +165,5 @@ var boardRestart = $('#gameRestart').click(function(event) {
 
 newGame();
 setName();
-boardRestart();
 
 });
